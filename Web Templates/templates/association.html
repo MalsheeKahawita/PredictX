@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Credit card approval predictor</title>
+	<link rel="stylesheet" type="text/css" href="./static/Asso_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  
+</head>
+<body>
+    <nav>
+        <div class="navicon">
+        <div></div>
+        </div>
+      
+        <a href="/">Home</a>
+        <a href="/predict">Gaussian</a>      
+    </nav>
+      
+	<div class="container">
+		<div class="contact-box" style="overflow:auto; width: 1000px; height: 500px;">
+			<div class="left"></div>
+			<div class="right">
+				<h2>NEXT ITEM PREDICTOR</h2>
+                <form method="POST">
+
+                
+                <select class="field" name="item_select1" id="" required>
+                    <option value="">Item 1</option>
+                    <option value="pork">pork</option>
+                    <option value="sandwich bags">sandwich bags</option>
+                    <option value="lunch meat">lunch meat</option>
+                    <option value="noodles">noodles</option>
+                    <option value="flour">flour</option>
+                    <option value="soda">soda</option>
+                    <option value="butter">butter</option>
+                    <option value="vegetables">vegetables</option>
+                    <option value="soap">soap</option>
+                    <option value="hand soap">hand soap</option>
+                    <option value="poultry">poultry</option>
+                    <option value="beef">beef</option>
+                    <option value="aluminum foil">aluminum foil</option>
+                    <option value="dinner rolls">dinner rolls</option>
+                    <option value="shampoo">shampoo</option>
+                    <option value="mixes">mixes</option>
+                    <option value="laundry detergent">laundry detergent</option>
+                    <option value="ice cream">ice cream</option>
+                    <option value="toilet paper">toilet paper</option>
+                    <option value="waffles">waffles</option>
+                    <option value="cheeses">cheeses</option>
+                    <option value="milk">milk</option>
+                    <option value="dishwashing liquid/detergent">dishwashing liquid/detergent</option>
+                    <option value="individual meals">individual meals</option>
+                    <option value="cereals">cereals</option>
+                    <option value="tortillas">tortillas</option>
+                    <option value="spaghetti sauce">spaghetti sauce</option>
+                    <option value="ketchup">ketchup</option>
+                    <option value="sandwich loaves">sandwich loaves</option>
+                    <option value="bagels">bagels</option>
+                    <option value="eggs">eggs</option>
+                    <option value="juice">juice</option>
+                    <option value="pasta">pasta</option>
+                    <option value="paper towels">paper towels</option>
+                    <option value="coffee/tea">coffee/tea</option>
+                    <option value="fruits">fruits</option>
+                    <option value="sugar">sugar</option>
+                  </select>
+
+                  <select class="field" name="item_select2" id="">
+                    <option value="">Item 2</option>
+                    <option value="pork">pork</option>
+                    <option value="sandwich bags">sandwich bags</option>
+                    <option value="lunch meat">lunch meat</option>
+                    <option value="noodles">noodles</option>
+                    <option value="flour">flour</option>
+                    <option value="soda">soda</option>
+                    <option value="butter">butter</option>
+                    <option value="vegetables">vegetables</option>
+                    <option value="soap">soap</option>
+                    <option value="hand soap">hand soap</option>
+                    <option value="poultry">poultry</option>
+                    <option value="beef">beef</option>
+                    <option value="aluminum foil">aluminum foil</option>
+                    <option value="dinner rolls">dinner rolls</option>
+                    <option value="shampoo">shampoo</option>
+                    <option value="mixes">mixes</option>
+                    <option value="laundry detergent">laundry detergent</option>
+                    <option value="ice cream">ice cream</option>
+                    <option value="toilet paper">toilet paper</option>
+                    <option value="waffles">waffles</option>
+                    <option value="cheeses">cheeses</option>
+                    <option value="milk">milk</option>
+                    <option value="dishwashing liquid/detergent">dishwashing liquid/detergent</option>
+                    <option value="individual meals">individual meals</option>
+                    <option value="cereals">cereals</option>
+                    <option value="tortillas">tortillas</option>
+                    <option value="spaghetti sauce">spaghetti sauce</option>
+                    <option value="ketchup">ketchup</option>
+                    <option value="sandwich loaves">sandwich loaves</option>
+                    <option value="bagels">bagels</option>
+                    <option value="eggs">eggs</option>
+                    <option value="juice">juice</option>
+                    <option value="pasta">pasta</option>
+                    <option value="paper towels">paper towels</option>
+                    <option value="coffee/tea">coffee/tea</option>
+                    <option value="fruits">fruits</option>
+                    <option value="sugar">sugar</option>
+                  </select>
+
+                  <select class="field" name="item_select3" id="">
+                    <option value="">Item 3</option>
+                    <option value="pork">pork</option>
+                    <option value="sandwich bags">sandwich bags</option>
+                    <option value="lunch meat">lunch meat</option>
+                    <option value="noodles">noodles</option>
+                    <option value="flour">flour</option>
+                    <option value="soda">soda</option>
+                    <option value="butter">butter</option>
+                    <option value="vegetables">vegetables</option>
+                    <option value="soap">soap</option>
+                    <option value="hand soap">hand soap</option>
+                    <option value="poultry">poultry</option>
+                    <option value="beef">beef</option>
+                    <option value="aluminum foil">aluminum foil</option>
+                    <option value="dinner rolls">dinner rolls</option>
+                    <option value="shampoo">shampoo</option>
+                    <option value="mixes">mixes</option>
+                    <option value="laundry detergent">laundry detergent</option>
+                    <option value="ice cream">ice cream</option>
+                    <option value="toilet paper">toilet paper</option>
+                    <option value="waffles">waffles</option>
+                    <option value="cheeses">cheeses</option>
+                    <option value="milk">milk</option>
+                    <option value="dishwashing liquid/detergent">dishwashing liquid/detergent</option>
+                    <option value="individual meals">individual meals</option>
+                    <option value="cereals">cereals</option>
+                    <option value="tortillas">tortillas</option>
+                    <option value="spaghetti sauce">spaghetti sauce</option>
+                    <option value="ketchup">ketchup</option>
+                    <option value="sandwich loaves">sandwich loaves</option>
+                    <option value="bagels">bagels</option>
+                    <option value="eggs">eggs</option>
+                    <option value="juice">juice</option>
+                    <option value="pasta">pasta</option>
+                    <option value="paper towels">paper towels</option>
+                    <option value="coffee/tea">coffee/tea</option>
+                    <option value="fruits">fruits</option>
+                    <option value="sugar">sugar</option>
+                  </select>
+
+                <div class="d-flex justify-content-end pt-3">
+                    <input type="reset" class="btn btn-warning btn-lg ms-2" value="Clear Items"><br><br>
+                    <button type="submit" value="Submit" class="btn btn-warning btn-lg ms-2">
+                        Show Consequent Products
+                    </button><br>
+                </div>
+
+                <div class="mt-4 pt-2">
+                    {% if pattern1 %}
+                        <br><h3 class="mb-5 text-uppercase">{{ pattern1|length }}
+                            Consequent Products for {{ items }} </h3>
+                        <table class="table table-sm table-hover table-striped" style="width:100% ">
+                            {% for i in range (0,pattern1|length) %}
+                                <tr>
+                                    <td style="font-size: 17pt;color: black;">{{ " , ".join(pattern1[i]) }}</td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    {% else %}
+                        {% if items %}
+                            <h3 style="font-family: arial;font-size: 18pt;color: white;">No
+                                combinations for {{ items }}</h3>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                </form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
